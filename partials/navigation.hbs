@@ -1,0 +1,25 @@
+
+{{! Master navigation template }}
+
+<!-- Navigation -->
+<div class="masthead clearfix">
+  <div class="inner">
+    <a href="{{@blog.url}}"><h3 class="masthead-brand">{{@blog.title}}</h3></a>
+
+    <nav>
+      <ul class="nav masthead-nav">
+
+        <!-- Loop through the navigation items -->
+        {{#foreach navigation}}
+
+          <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}"><a href="{{url absolute="true"}}">{{label}}</a></li>
+
+        {{/foreach}}
+        <!-- End the loop -->
+
+      </ul>
+    </nav>
+
+  </div>
+</div>
+<!-- /Navigation -->

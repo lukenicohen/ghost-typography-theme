@@ -1,0 +1,37 @@
+
+{{!< default}}
+
+
+<div class="site-wrapper">
+  <div class="site-wrapper-inner">
+    <div class="cover-container">
+
+      {{navigation}}
+
+    </div>
+  </div>
+</div>
+
+<div class="site-wrapper posts-list-wrapper">
+
+  {{#tag}}
+
+  <h2>Posts by tag:</h2>
+  <h1>{{name}}</h1>
+
+  {{#if description}}<h3>{{description}}</h3>{{/if}}
+
+  {{/tag}}
+
+
+  {{#foreach posts}}
+
+    {{> post-loop}}
+
+  {{/foreach}}
+
+  {{pagination}}
+
+  {{> footer}}
+
+</div>

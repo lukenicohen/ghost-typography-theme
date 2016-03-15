@@ -1,0 +1,34 @@
+
+/*
+
+vanity-dubiel combo
+
+*/
+
+@font-face {
+   font-family: "Vanity";
+   src: url('../../fonts/Vanity-Bold.ttf');
+}
+
+@font-face {
+   font-family: "Dubiel";
+   src: url('../../fonts/DubielPlain.ttf');
+}
+
+/* headers */
+h1, h2, h3, h4, h5 {
+  font-family: "Vanity"!important;
+}
+
+body, p {
+  font-family: "Dubiel", Helvetica!important;
+}
+
+/* Menu */
+.masthead-nav > li {
+  font-family:"Vanity"!important;
+}
+
+.masthead-nav > li > a {
+  font-size: 18px; /* 18 if using Cheltenham font, 14 if Couture */
+}

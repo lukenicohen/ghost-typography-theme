@@ -1,0 +1,34 @@
+
+/*
+
+couture-helveticaneue combo
+
+*/
+
+@font-face {
+   font-family: "Couture";
+   src: url('../../fonts/couture-bld.otf');
+}
+
+/* headers */
+h1, h2, h3, h4, h5 {
+  font-family: "Couture"!important;
+}
+
+body, p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif!important;
+}
+
+/* Menu */
+.masthead-nav > li {
+  font-family:"Couture"!important;
+}
+
+.masthead-nav > li > a {
+  font-size: 14px; /* 18 if using Cheltenham font, 14 if Couture */
+}
+
+/* Pagination */
+.navbtn a, .navinfo {
+  font-family:"Couture"!important;
+}

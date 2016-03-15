@@ -1,0 +1,29 @@
+
+/*
+
+coco-helveticaneue combo
+
+*/
+
+@font-face {
+   font-family: "Coco";
+   src: url('../../fonts/Coco-Bold.otf');
+}
+
+/* headers */
+h1, h2, h3, h4, h5 {
+  font-family: "Coco"!important;
+}
+
+body, p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif!important;
+}
+
+/* Menu */
+.masthead-nav > li {
+  font-family:"Coco"!important;
+}
+
+.masthead-nav > li > a {
+  font-size: 18px; /* 18 if using Cheltenham font, 14 if Couture */
+}

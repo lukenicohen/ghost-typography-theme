@@ -1,0 +1,51 @@
+
+<div id="fb-root"></div>
+
+<div class="site-wrapper {{#if image}}with-img{{else}}without-img{{/if}}"{{#if image}} style="background-image:url('{{image}}');"{{/if}}>
+
+  <div class="site-wrapper-inner">
+
+    <div class="cover-container">
+
+      {{navigation}}
+
+      <div class="inner cover">
+
+        <h1 class="cover-heading">{{title}}</h1>
+
+        <p class="lead">{{excerpt characters="200"}} ...</p>
+
+
+        {{#is "post"}}
+
+        <p class="lead meta">Posted on {{date format='MMM DD, YYYY'}} by {{author}}.</p>
+
+        {{#if tags}}<p class="lead meta"><i class="tagsicon fa fa-tags"></i>{{tags}}</p>{{/if}}
+
+        <div class="socialButtons">
+          <span class="fa">
+
+            <a href="https://twitter.com/intent/tweet?text={{title}}&url={{url}}" class="socialbtn first">&#xf081;</a>
+            <a href="#" onClick="window.open('https://www.facebook.com/sharer/sharer.php?u={{url}}', 'pop', 'width=600, height=400, scrollbars=no');" class="socialbtn">&#xf082;</a>
+
+          </span>
+        </div>
+
+        {{/is}}
+
+
+      </div>
+
+    </div>
+
+    <div class="fa downholder{{#is "post"}} dhpost{{/is}}">
+
+      <a href="#content">&#xf142;</a>
+
+      <a name="content"></a>
+
+    </div>
+
+  </div>
+
+</div>

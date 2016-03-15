@@ -1,0 +1,29 @@
+
+/*
+
+lustscript-helveticaneue combo
+
+*/
+
+@font-face {
+   font-family: "LustScript";
+   src: url('../../fonts/Coco-Bold.otf');
+}
+
+/* headers */
+h1, h2, h3, h4, h5 {
+  font-family: "LustScript"!important;
+}
+
+body, p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif!important;
+}
+
+/* Menu */
+.masthead-nav > li {
+  font-family:"LustScript"!important;
+}
+
+.masthead-nav > li > a {
+  font-size: 18px; /* 18 if using Cheltenham font, 14 if Couture */
+}

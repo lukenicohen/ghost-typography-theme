@@ -1,0 +1,29 @@
+
+/*
+
+cheltenham-helveticaneue combo
+
+*/
+
+@font-face {
+   font-family: "Cheltenham";
+   src: url('../../fonts/cheltenham-bt.ttf');
+}
+
+/* headers */
+h1, h2, h3, h4, h5 {
+  font-family: "Cheltenham"!important;
+}
+
+body, p {
+  font-family: "Helvetica Neue", Helvetica!important;
+}
+
+/* Menu */
+.masthead-nav > li {
+  font-family:"Cheltenham"!important;
+}
+
+.masthead-nav > li > a {
+  font-size: 18px; /* 18 if using Cheltenham font, 14 if Couture */
+}

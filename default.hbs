@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="{{meta_description}}" />
+
+
+    <title>{{@blog.title}} &gt; {{meta_title}}</title>
+
+    <link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
+
+    <!-- Template - and dependency - Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="{{asset "css/bootstrap.min.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/global.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/font-awesome.min.css"}}" />
+
+    {{! Following stylesheet directive controls the custom font: }}
+    <link rel="stylesheet" type="text/css" href="{{asset "css/fontsheets/couture-helveticaneue.css"}}" />
+
+    <link rel="stylesheet" type="text/css" href="{{asset "css/menu.css"}}" />
+
+
+    {{! stylesheet for this view is selected dynamically }}
+    {{#is "index"}}
+      {{#is "home"}}
+        <link rel="stylesheet" type="text/css" href="{{asset "css/allposts.css"}}" />
+      {{else}}
+        <link rel="stylesheet" type="text/css" href="{{asset "css/allposts.css"}}" />
+      {{/is}}
+    {{/is}}
+
+    {{#is "post"}}
+      <link rel="stylesheet" type="text/css" href="{{asset "css/single.css"}}" />
+    {{/is}}
+
+    {{#is "page"}}
+      <link rel="stylesheet" type="text/css" href="{{asset "css/single.css"}}" />
+    {{/is}}
+
+    {{#is "author"}}
+      <link rel="stylesheet" type="text/css" href="{{asset "css/allposts.css"}}" />
+    {{/is}}
+
+    {{#is "tag"}}
+      <link rel="stylesheet" type="text/css" href="{{asset "css/allposts.css"}}" />
+    {{/is}}
+
+    <!-- Favicon -->
+    <link rel="icon" href="{{asset "images/favicon.ico"}}" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    {{! Ghost head output }}
+    {{ghost_head}}
+
+  </head>
+
+  <body class="{{body_class}}">
+
+    <a name="top"></a>
+
+    {{! Main output }}
+    {{{body}}}
+
+
+    {{! Template - and dependency - Javascript libraries }}
+    <script src="{{asset "js/jquery-2.2.1.min.js"}}"></script>
+    <script src="{{asset "js/bootstrap.min.js"}}"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="{{asset "js/ie10-viewport-bug-workaround.js"}}"></script>
+
+
+    {{! Ghost foot output }}
+    {{ghost_foot}}
+
+
+  </body>
+
+</html>

@@ -1,0 +1,185 @@
+
+.masthead-nav > li > a {
+  color: #000!important;
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+.posts-list-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 20px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: normal;
+  background-color:transparent;
+  border:1px solid #000;
+}
+
+
+/* content */
+.posts-list {
+  color:#fff;
+  font-weight:100;
+  font-size:22px!important;
+  line-height:33px!important;
+  /*text-align:justify!important;*/
+  text-align:center!important;
+  margin-top:40px;
+  padding:40px!important;
+}
+
+.posts-list.with-img {
+  background-color:rgba(41,46,55,0.5);
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-blend-mode:multiply;
+  background-position:50% 50%;
+}
+
+.posts-list.without-img {
+  background-color:#292E37;
+}
+
+.posts-list.with-img:hover {
+  background-color:rgba(41,46,55,0.65)!important;
+}
+
+.posts-list.without-img:hover {
+  background-color:#353C4A!important;
+}
+
+.posts-list h2 {
+  text-align:center!important;
+  margin-top:0px!important;
+}
+
+.posts-list p {
+  /*margin-bottom:30px;*/
+}
+
+.posts-list-wrapper h1 {
+  margin-bottom:80px;
+}
+
+.masthead-brand {
+  color:#000!important;
+}
+
+.lead {
+  margin-bottom:0px!important;
+}
+
+.lead a {
+  font-size:1em!important;
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: #292E37;
+  text-align:center!important;
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: absolute;
+    top: 0;
+  }
+  .mastfoot {
+    /*position: fixed;
+    bottom: 0;*/
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+
+  .posts-list {
+    /*padding-left:0px;
+    padding-right:0px;*/
+  }
+
+  .posts-list-wrapper {
+    margin-top:160px;
+  }
+}
+
+@media (max-width:991px) {
+
+  .site-wrapper {
+    padding-left:30px!important;
+    padding-right:30px!important;
+  }
+
+  .cover {
+    margin-top:25%!important;
+  }
+
+  .posts-list p {
+    font-size:18px;
+    line-height:28px;
+  }
+
+  .lead {
+    /*text-align:left!important;*/
+  }
+
+}
+
+@media (min-width: 992px) {
+
+  .masthead,
+  .cover-container {
+    width: 700px;
+  }
+
+  .mastfoot {
+    width:100%;
+  }
+
+  .posts-list-container {
+    width: 700px;
+  }
+
+}

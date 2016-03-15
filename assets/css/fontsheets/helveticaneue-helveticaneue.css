@@ -1,0 +1,24 @@
+
+/*
+
+helveticaneue-helveticaneue combo
+
+*/
+
+/* headers */
+h1, h2, h3, h4, h5 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif!important;
+}
+
+body, p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif!important;
+}
+
+/* Menu */
+.masthead-nav > li {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif!important;
+}
+
+.masthead-nav > li > a {
+  font-size: 18px; /* 18 if using Cheltenham font, 14 if Couture */
+}

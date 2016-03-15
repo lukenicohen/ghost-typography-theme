@@ -1,0 +1,44 @@
+
+{{!< default}}
+
+<div class="site-wrapper">
+  <div class="site-wrapper-inner">
+    <div class="cover-container">
+
+      {{navigation}}
+
+    </div>
+  </div>
+</div>
+
+
+<div class="site-wrapper posts-list-wrapper">
+
+
+  {{#is "home"}}
+
+      <header class="home-cover center-block {{#if @blog.cover}}with-img{{else}}without-img{{/if}}" {{#if @blog.cover}}style="background-image:url('{{@blog.cover}}');"{{/if}}>
+
+        <hgroup>
+
+          <h1>{{@blog.title}}</h1>
+          <p class="lead">{{@blog.description}}</p>
+
+        </hgroup>
+
+      </header>
+
+  {{/is}}
+
+
+  {{#foreach posts}}
+
+    {{> post-loop}}
+
+  {{/foreach}}
+
+  {{pagination}}
+
+  {{> footer}}
+
+</div>

@@ -1,0 +1,29 @@
+
+/*
+
+dubiel-helveticaneue combo
+
+*/
+
+@font-face {
+   font-family: "Dubiel";
+   src: url('../../fonts/DubielPlain.ttf');
+}
+
+/* headers */
+h1, h2, h3, h4, h5 {
+  font-family: "Dubiel"!important;
+}
+
+body, p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif!important;
+}
+
+/* Menu */
+.masthead-nav > li {
+  font-family:"Dubiel"!important;
+}
+
+.masthead-nav > li > a {
+  font-size: 18px; /* 18 if using Cheltenham font, 14 if Couture */
+}

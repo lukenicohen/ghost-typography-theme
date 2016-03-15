@@ -1,0 +1,39 @@
+
+{{!< default}}
+
+
+<div class="site-wrapper">
+  <div class="site-wrapper-inner">
+    <div class="cover-container">
+
+      {{navigation}}
+
+    </div>
+  </div>
+</div>
+
+<div class="site-wrapper posts-list-wrapper">
+
+  {{#author}}
+
+  {{#if image}}<img src="{{image}}" class="center-block img-responsive img-circle avi" />{{/if}}
+
+  <h1>{{name}}</h1>
+
+  {{#if location}}<h4>{{location}}</h4>{{/if}}
+  {{#if bio}}<p class="lead">{{bio}}</p>{{/if}}
+
+  {{/author}}
+
+
+  {{#foreach posts}}
+
+    {{> post-loop}}
+
+  {{/foreach}}
+
+  {{pagination}}
+
+  {{> footer}}
+
+</div>

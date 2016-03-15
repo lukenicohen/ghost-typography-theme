@@ -1,0 +1,16 @@
+
+<a href="{{{url}}}">
+  <div class="posts-list-container posts-list {{#if image}}with-img{{else}}without-img{{/if}}"{{#if image}} style="background-image:url('{{image}}');"{{/if}}>
+
+    <h2>{{title}}</h2>
+
+    <p class="lead">{{excerpt characters="200"}} <strong>read &raquo;</strong></p>
+
+    {{#is "post"}}
+
+    <p class="lead meta">{{date format='MMM DD, YYYY'}} by {{author}}</p>
+
+    {{/is}}
+
+  </div>
+</a>
