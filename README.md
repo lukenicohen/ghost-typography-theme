@@ -1,7 +1,7 @@
 # Typography theme for the Ghost CMS
 ## Version 1.0.0
 
-### About Typography
+### About Typography theme
 
 Typography is my first theme for the Ghost CMS. I'll also make a version of it available for Wordpress (I'll post the link here when that's available).
 
@@ -78,7 +78,7 @@ Save post.hbs and re-upload it to your Ghost install. Now restart Ghost, and Dis
 
 ### Disabling social share buttons
 
-By default Typography enables Twitter and Facebook sharer buttons on all posts. These both rely on the various Javascript APIs provided by Twitter and Facebook. In order to disable social sharer buttons, open the file post-head.hbs, and replace the following block of code:
+By default Typography enables Twitter and Facebook sharer buttons on all posts. These both rely on the various Javascript APIs provided by Twitter and Facebook. In order to disable social sharer buttons, open the file partials/post-head.hbs, and replace the following block of code:
 
 ```
 <div class="socialButtons">
@@ -104,4 +104,4 @@ with the following commented out version:
 </div> --}}
 ```
 
-Re-upload post-head.hbs and restart Ghost for these changes to take effect.
+Re-upload partials/post-head.hbs to your Ghost install, and restart Ghost for these changes to take effect.
