@@ -9,6 +9,18 @@ I love Ghost! I love the simplicity of it, even though at this stage it's fairly
 
 Typography is a minimalist theme, with a focus on typography, and an overarching aim of getting out of your way. It supports blog cover images, post feature images, social sharing on Facebook and Twitter, Disqus comment integration, and is fully mobile-ready.
 
+You can access a fully working install of the Typography theme at my own blog: https://lukejournal.co.uk/
+
+### Screenshots
+
+![Ghost Typography Theme Screenshot](https://raw.githubusercontent.com/lukenicohen/ghost-typography-theme/master/assets/images/screenshots/typography-post.jpg)
+
+![Ghost Typography Theme Screenshot](https://raw.githubusercontent.com/lukenicohen/ghost-typography-theme/master/assets/images/screenshots/typography-list.jpg)
+
+![Ghost Typography Theme Screenshot](https://raw.githubusercontent.com/lukenicohen/ghost-typography-theme/master/assets/images/screenshots/typography-page.jpg)
+
+![Ghost Typography Theme Screenshot](https://raw.githubusercontent.com/lukenicohen/ghost-typography-theme/master/assets/images/screenshots/typography-author.jpg)
+
 ### Installation and use
 
 Installation is via the standard Ghost approach. Using git or FTP, or wget or curl, or whatever method you prefer, place the 'typographyghost' folder in your SITE_ROOT/content/themes folder. Reset Ghost and then select Typography in the Ghost admin panel (Settings -> General -> Theme), not forgetting to click Save. Typography is now your active theme.
