@@ -35,6 +35,25 @@ The included font combinations are:
 
 Sadly at this point Ghost doesn't allow developers to set theme options from inside the admin site, so in order to switch to a different font combination, you have to make a small change in the default.hbs file. To enable a specific fontsheet, with the default.hbs file (from line 20 onwards), simply uncomment your selection by removing the HTML commenting syntax from each end of the appropriate line. Be sure that all other fontsheet lines are commented out with HTML comments, except for the one that you want to use.
 
+For example, to enable the Dubiel & Dubiel fontsheet, line 20-34 in default.hbs should look like the following:
+
+```
+{{! Following stylesheet directive controls the custom font: }}
+<!-- Fontsheet -->
+<!--<link rel="stylesheet" type="text/css" href="{{asset "css/fontsheets/cheltenham-cheltenham.css"}}" />-->
+<!--<link rel="stylesheet" type="text/css" href="{{asset "css/fontsheets/cheltenham-helveticaneue.css"}}" />-->
+<!--<link rel="stylesheet" type="text/css" href="{{asset "css/fontsheets/coco-dubiel.css"}}" />-->
+<!--<link rel="stylesheet" type="text/css" href="{{asset "css/fontsheets/coco-helveticaneue.css"}}" />-->
+<!--<link rel="stylesheet" type="text/css" href="{{asset "css/fontsheets/couture-dubiel.css"}}" />-->
+<!--<link rel="stylesheet" type="text/css" href="{{asset "css/fontsheets/couture-helveticaneue.css"}}" />-->
+<link rel="stylesheet" type="text/css" href="{{asset "css/fontsheets/dubiel-dubiel.css"}}" />
+<!--<link rel="stylesheet" type="text/css" href="{{asset "css/fontsheets/dubiel-helveticaneue.css"}}" />-->
+<!--<link rel="stylesheet" type="text/css" href="{{asset "css/fontsheets/helveticaneue-helveticaneue.css"}}" />-->
+<!--<link rel="stylesheet" type="text/css" href="{{asset "css/fontsheets/lustscript-dubiel.css"}}" />-->
+<!--<link rel="stylesheet" type="text/css" href="{{asset "css/fontsheets/lustscript-helveticaneue.css"}}" />-->
+<!--<link rel="stylesheet" type="text/css" href="{{asset "css/fontsheets/vanity-dubiel.css"}}" />-->
+```
+
 After changing the fontsheet, be sure to save default.hbs and re-upload it to the theme folder on your Ghost install. You will have to stop and start Ghost for the change to take affect.
 
 More information on fontsheets, including how to use your own, can be found in the comments in default.hbs.
