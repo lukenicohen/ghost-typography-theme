@@ -13,7 +13,7 @@ You can access a fully working install of the Typography theme at my own blog: h
 
 ### Screenshots
 
-![Ghost Typography Theme Screenshot](https://raw.githubusercontent.com/lukenicohen/ghost-typography-theme/master/assets/images/screenshots/typography-home.jpg)
+![Ghost Typography Theme Screenshot](https://raw.githubusercontent.com/lukenicohen/ghost-typography-theme/master/assets/images/screenshots/typography-homepage.jpg)
 
 ![Ghost Typography Theme Screenshot](https://raw.githubusercontent.com/lukenicohen/ghost-typography-theme/master/assets/images/screenshots/typography-post.jpg)
 
