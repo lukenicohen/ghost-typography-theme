@@ -15,7 +15,6 @@
 
         <p class="lead">{{excerpt characters="200"}} ...</p>
 
-
         {{#is "post"}}
 
         <p class="lead meta">Posted on {{date format='MMM DD, YYYY'}} by {{author}}.</p>
@@ -25,8 +24,8 @@
         <div class="socialButtons">
           <span class="fa">
 
-            <a href="https://twitter.com/intent/tweet?text={{title}}&url={{url}}" class="socialbtn first">&#xf081;</a>
-            <a href="#" onClick="window.open('https://www.facebook.com/sharer/sharer.php?u={{url}}', 'pop', 'width=600, height=400, scrollbars=no');" class="socialbtn">&#xf082;</a>
+            <a href="https://twitter.com/intent/tweet?text={{title}}&url={{url absolute="true"}}" class="socialbtn first">&#xf081;</a>
+            <a href="#" onClick="window.open('https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}', 'pop', 'width=600, height=400, scrollbars=no');" class="socialbtn">&#xf082;</a>
 
           </span>
         </div>

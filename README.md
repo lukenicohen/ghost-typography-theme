@@ -75,3 +75,33 @@ should read:
 ```
 
 Save post.hbs and re-upload it to your Ghost install. Now restart Ghost, and Disqus commenting will be enabled.
+
+### Disabling social share buttons
+
+By default Typography enables Twitter and Facebook sharer buttons on all posts. These both rely on the various Javascript APIs provided by Twitter and Facebook. In order to disable social sharer buttons, open the file post-head.hbs, and replace the following block of code:
+
+```
+<div class="socialButtons">
+  <span class="fa">
+
+    <a href="https://twitter.com/intent/tweet?text={{title}}&url={{url absolute="true"}}" class="socialbtn first">&#xf081;</a>
+    <a href="#" onClick="window.open('https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}', 'pop', 'width=600, height=400, scrollbars=no');" class="socialbtn">&#xf082;</a>
+
+  </span>
+</div>
+```
+
+with the following commented out version:
+
+```
+{{!-- <div class="socialButtons">
+  <span class="fa">
+
+    <a href="https://twitter.com/intent/tweet?text={{title}}&url={{url absolute="true"}}" class="socialbtn first">&#xf081;</a>
+    <a href="#" onClick="window.open('https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}', 'pop', 'width=600, height=400, scrollbars=no');" class="socialbtn">&#xf082;</a>
+
+  </span>
+</div> --}}
+```
+
+Re-upload post-head.hbs and restart Ghost for these changes to take effect.
