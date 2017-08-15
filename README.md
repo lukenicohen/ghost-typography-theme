@@ -1,4 +1,5 @@
 # Typography theme for the Ghost CMS
+
 ## Version 1.0.0
 
 ### About Typography theme

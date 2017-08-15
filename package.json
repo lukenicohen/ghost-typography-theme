@@ -1,4 +1,10 @@
 {
-  "name" : "Typography Ghost",
-  "version" : "1.0.0"
+  "name" : "typography",
+  "version" : "1.1.0",
+  "author": {
+    "email": "maxime.bruguet@gmail.com"
+  },
+  "config": {
+      "posts_per_page": 10
+  }
 }
